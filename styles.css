@@ -115,6 +115,9 @@ a{
 .nav__icon{
   font-size: 1.25rem;
 }
+#group-nav-icon {
+  font-size: 2rem;
+}
 .nav__bx-group {
   font-size: 3rem;
 }
