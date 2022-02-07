@@ -35,11 +35,17 @@
 }
       
 .square {
+  position: relative; 
   width: 400px;
   height: 400px;
   background: black;
-  align: center;
-  animation: wipe-enter 1s 1;
+  text-align: center;
+}
+      
+@media (prefers-reduced-motion: no-preference) {
+  .square-animation {
+    animation: wipe-enter 1s 1;
+  }
 }
     </style>
     
@@ -49,7 +55,8 @@
     <div class = "typewriter">
     Big Brother is watching you comrade...
     </div>
-     <div class = "square">
+   
+    <div class = "square">
     Doubleplusgood Statisticsre...
     </div>
 }
