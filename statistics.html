@@ -33,7 +33,12 @@
   from, to { border-color: transparent }
   50% { border-color: black; }
 }
-      
+   
+    @media (prefers-reduced-motion: no-preference) {
+  .square {
+    animation-name: wipe-enter;
+    animation-duration: 1s;
+  }
     </style>
     
   </head> 
@@ -42,6 +47,7 @@
     <div class = "typewriter">
     Big Brother is watching you comrade...
     </div>
+}
    
     
   </body>
