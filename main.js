@@ -84,6 +84,7 @@ function wordOfTheDayButtonClick() {
             if (userScore === 4) {
                 // says the word is correct
                 document.getElementById("result").innerHTML = "you are in...";
+                window.open('brotherhood.html');
             } 
             // removes ability of more guesses
             button.remove();
