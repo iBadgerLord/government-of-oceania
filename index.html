@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ===== BOX ICONS ===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="styles.css">
+
+
+        <title>Government of Oceania</title>
+    </head>
+
+    <body id="body-pd">
+        <header class="header" id="header">
+            <div class="header__toggle">
+                <i class='bx bx-menu' id="header-toggle"></i>
+            </div>
+
+            <div class="header__img">
+                <img src="assets/img/ingsoc.png" alt="">
+            </div>
+        </header>
+
+        <div class="l-navbar" id="nav-bar">
+            <nav class="nav">
+                <div>
+                    <a href="#" class="nav__logo">
+                        <i class='bx bx-building nav__logo-icon'></i>
+                        <span class="nav__logo-name">Ingsoc</span>
+                    </a>
+
+                    <div class="nav__list">
+                        <a href="#" class="nav__link active">
+                        <i class='bx bx-grid-alt nav__icon' ></i>
+                            <span class="nav__name">Dashboard</span>
+                        </a>
+
+                        <a href="php.html" class="nav__link">
+                            <i class='bx bx-world nav__icon' ></i>
+                            <span class="nav__name">Oceania</span>
+                        </a>
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-news nav__icon' ></i>
+                            <span class="nav__name">News</span>
+                        </a>
+                        
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-tv nav__icon' ></i>
+                            <span class="nav__name">Telescreen</span>
+                        </a>
+
+                        <a href="#" class="nav__link">
+                            <i id= 'group-nav-icon' class='bx bx-group nav__icon'></i>
+                            <span class="nav__name">Community</span>
+                        </a>
+
+                        <a href="statistics.html" class="nav__link">
+                            <i class='bx bx-bar-chart-alt-2 nav__icon' ></i>
+                            <span class="nav__name">Statistics</span>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="#" class="nav__link">
+                    <i class='bx bx-log-out nav__icon' ></i>
+                    <span class="nav__name">Log Out</span>
+                </a>
+            </nav>
+        </div>
+
+        <h1>Airstrip One News</h1>
+
+        <div class="word-of-the-day">
+            <h2>Newspeak Word of the day</h2>
+            <p id="word-of-the-day-DATE"></p>
+
+            <!-- Main Area of Work -->
+            <input type="text" id="wordOfTheDayGuessBox">
+            <button type="button" onclick="wordOfTheDayButtonClick()" id="submitGuessButton">submit</button>
+            
+            <br>            
+            <p>noun [ˈdʌb(ə)lθɪŋk/]</p>
+            <p>the acceptance of contrary opinions or beliefs at the same time, especially as a result of political indoctrination.</p>
+
+            <p id="result">___</p>
+
+        </div>
+
+        <!--===== MAIN JS =====-->
+        <script src="main.js"></script>
+    </body>
+</html>
