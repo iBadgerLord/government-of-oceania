@@ -74,23 +74,39 @@
             </nav>
         </div>
 
-        <h1>Airstrip One News</h1>
+        <section class="top-container">
+            <header class="showcase">
+                <h1>Airstrip One News</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum natus voluptate reprehenderit! Dolor, qui sunt.</p>
+                <a href="#" class="btn">Read More</a>
+            </header>
+            <div class="top-box top-box-a">
+                <h4>Membership</h4>
+                <p class="price">$199/mo</p>
+                <a href="#" class="btn">Buy Now</a>
+            </div>
 
-        <div class="word-of-the-day">
-            <h2>Newspeak Word of the day</h2>
-            <p id="word-of-the-day-DATE"></p>
+            <div class="top-box top-box-b">
+                <div class="word-of-the-day-box">
+                    <div class="text-in-word-box">
+                        <h3>Newspeak Word of the Day</h3>
+                        <p class="tiny-letters" id="word-of-the-day-DATE"></p>
+                        <br>
 
-            <!-- Main Area of Work -->
-            <input type="text" id="wordOfTheDayGuessBox">
-            <button type="button" onclick="wordOfTheDayButtonClick()" id="submitGuessButton">submit</button>
-            
-            <br>            
-            <p>noun [ˈdʌb(ə)lθɪŋk/]</p>
-            <p>the acceptance of contrary opinions or beliefs at the same time, especially as a result of political indoctrination.</p>
+                        <!-- Main Area of Work -->
+                        <input type="text" id="wordOfTheDayGuessBox">
+                        <br>
+                        <br>
+                        <button type="button" onclick="wordOfTheDayButtonClick()" id="submitGuessButton">submit</button>
+                        <br>
+                        <p><em>"the acceptance of contrary opinions or beliefs at the same time, especially as a result of political indoctrination"</em></p>
+                        
+                    </div>
+                </div>            
+            </div>
 
-            <p id="result">___</p>
-
-        </div>
+        </section>
+        <p id="result"></p>
 
         <!--===== MAIN JS =====-->
         <script src="main.js"></script>
