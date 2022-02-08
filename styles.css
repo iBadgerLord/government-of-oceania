@@ -215,12 +215,12 @@ a{
       color: grey;
       top: 50%;
       width: 100%;
-      font-size: 40px;
+      font-size: large;
   }
         
   @media {
     .square-animation {
-      animation: wipe-enter 2s 1;
+      animation: wipe-enter 2s 5;
     }
     
     .statisticspicture {
