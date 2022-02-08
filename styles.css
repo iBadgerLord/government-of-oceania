@@ -214,13 +214,19 @@ a{
   .text {
       color: grey;
       top: 50%;
+      width: 100%;
   }
         
   @media {
     .square-animation {
-      animation: wipe-enter 1s 1;
+      animation: wipe-enter 2s 1;
     }
     
+    .statisticspicture {
+      width: 80%;
+      height: 80%;
+      text-align: center; 
+    }
 }
 
 
