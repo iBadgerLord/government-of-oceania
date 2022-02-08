@@ -220,6 +220,12 @@ a{
     .square-animation {
       animation: wipe-enter 1s 1;
     }
+    .statisticspicture {
+      width: 80%;
+      height: 80%;
+      text-align: center; 
+    }
+    
 }
 
 
