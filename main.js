@@ -66,11 +66,12 @@ function wordOfTheDayButtonClick() {
 
     if (userWord === wordOfTheDay) {
         // says the word is correct
-        document.getElementById("result").innerHTML = "Congratulations comrade!";
+        //   document.getElementById("result").innerHTML = "Congratulations comrade!";
         // removes ability of more guesses
-        button.remove();
+        button.disabled = true;
         // disables input field
         document.getElementById("wordOfTheDayGuessBox").disabled = true;
+        
     } else {
 
         if (guesses === 4) {
@@ -83,15 +84,21 @@ function wordOfTheDayButtonClick() {
 
             if (userScore === 4) {
                 // says the word is correct
-                document.getElementById("result").innerHTML = "you are in...";
+                //   document.getElementById("result").innerHTML = "you are in...";
                 window.open('brotherhood.html');
+                document.getElementById("wordOfTheDayGuessBox").value = "you are dead";
             } 
             // removes ability of more guesses
-            button.remove();
+            button.disabled = true;
             // disables input field
             document.getElementById("wordOfTheDayGuessBox").disabled = true;
         } 
     }
-    
-    document.getElementById("wordOfTheDayGuessBox").value = "";
+
+    if (userWord === wordOfTheDay) {
+        document.getElementById("wordOfTheDayGuessBox").value = "doublethink";
+    } else if ((guesses != 4) || ((guesses === 4) && (userScore != 4)) ) {
+        document.getElementById("wordOfTheDayGuessBox").value = "";
+    }
+
 }
