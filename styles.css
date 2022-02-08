@@ -222,12 +222,7 @@ a{
     .square-animation {
       animation: wipe-enter 2s 5;
     }
-    
-    .statisticspicture {
-      width: 100px;
-      height: 100px;
-      text-align: center; 
-    }
+
 }
 
 
