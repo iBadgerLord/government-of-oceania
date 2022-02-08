@@ -33,7 +33,10 @@ function colorLink(){
 }
 linkColor.forEach(l=> l.addEventListener('click', colorLink))
 
+
+
 /*===== WORD OF THE DAY PROGRAMME =====*/
+
 // Exact date programme
 const monthOfYear = ["January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]; 
 const d = new Date();
