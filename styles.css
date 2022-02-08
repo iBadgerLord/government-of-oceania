@@ -10,6 +10,8 @@
   --first-color: #121212;
   --first-color-light: #b3b3b3;
   --white-color: #F7F6FB;
+  --light-gray-1: #d3d3d3;
+  --light-gray-2: #bebebe;
   /* Font and typography */
   --body-font: 'Nunito', sans-serif;
   --normal-font-size: 1rem;
@@ -218,12 +220,24 @@ a{
   font-family: var(--body-font);
   color: var(--white-color);
   text-align: center;
+  border-color: var(--white-color);
+  border-style: solid;
+}
+#wordOfTheDayGuessBox:disabled {
+  color: var(--light-gray-2);
+  border-color: var(--light-gray-2);
 }
 #submitGuessButton {
   background-color: transparent;
   font-size: 1rem;
   font-family: var(--body-font);
   color: var(--white-color);
+  border-color: var(--white-color);
+  border-style: solid;
+}
+#submitGuessButton:disabled {
+  color: var(--light-gray-2);
+  border-color: var(--light-gray-2);
 }
 
 
