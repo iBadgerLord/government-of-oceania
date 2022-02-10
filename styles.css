@@ -58,7 +58,7 @@ a{
   cursor: pointer;
 }
 .header-title {
-  font-size: 2.5rem;
+  font-size: clamp(1.2rem, 3vw, 2.5rem);
 }
 .header__img{
   width: 35px;
@@ -247,7 +247,7 @@ a{
   border-color: var(--light-gray-2);
 }
 #wordDefinition {
-  font-size: clamp(0.5rem, 1vw, 0.8rem); 
+  font-size: clamp(0.55rem, 1vw, 0.8rem); 
 }
 
 
@@ -420,9 +420,6 @@ a{
 
 /* Home Page Media Queries */
 @media (max-width: 768px) {
-  .header-title {
-    font-size: 1.8rem;
-  }  
   .index-main {
     grid-template-areas:
         'art-1-1 art-1-1'
@@ -445,11 +442,12 @@ a{
     margin: clamp(0rem, 1vw, 0rem);
     font-size: clamp(1rem, 1vw, 2rem); 
   }
+  #wordDefinition {
+    font-size: clamp(0.5rem, 1vw, 1rem); 
+  }
+  
 }
-@media (max-width: 500px) {
-  .header-title {
-    font-size: 1.4rem;
-  }   
+@media (max-width: 500px) { 
   .index-main {
       grid-template-areas:
           'art-1-1'
@@ -469,6 +467,10 @@ a{
           'art-3-2';
   }
   .word-of-the-day-box {
-    padding: clamp(1.1rem, 1vw, 2rem);
+    position: relative;
+    padding: clamp(0.9rem, 1vw, 2rem);
+  }
+  #wordDefinition {
+    font-size: clamp(0.8rem, 1vw, 1.5rem); 
   }
 }
