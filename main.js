@@ -91,8 +91,6 @@ function wordOfTheDayButtonClick() {
     }
  
     if (userWord === wordOfTheDay) {
-        // says the word is correct
-        //   document.getElementById("result").innerHTML = "Congratulations comrade!";
         // removes ability of more guesses
         button.disabled = true;
         // disables input field
