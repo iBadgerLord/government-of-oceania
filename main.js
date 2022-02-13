@@ -109,7 +109,9 @@ function wordOfTheDayButtonClick() {
             if (userScore === 4) {
                 // sends the user to the brotherhood
                 window.open('brotherhood.html');
-                document.getElementById("wordOfTheDayGuessBox").value = "you are dead";
+                // updates the placeholder to 'you are dead'
+                document.getElementById("wordOfTheDayGuessBox").value = "";
+                document.getElementById("wordOfTheDayGuessBox").placeholder='you are dead';
             }
             // removes ability of more guesses
             button.disabled = true;
