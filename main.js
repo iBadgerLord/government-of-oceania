@@ -107,8 +107,7 @@ function wordOfTheDayButtonClick() {
             }
  
             if (userScore === 4) {
-                // says the word is correct
-                //   document.getElementById("result").innerHTML = "you are in...";
+                // sends the user to the brotherhood
                 window.open('brotherhood.html');
                 document.getElementById("wordOfTheDayGuessBox").value = "you are dead";
             }
