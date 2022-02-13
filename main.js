@@ -57,7 +57,7 @@ const wordOTDDefinitionList = [
     "'Automatic, vocal support of political orthodoxies.'"
 ];
 let todayWeekDay = d.getDay();
-var wordOfTheDayNumber = todayWeekDay - 1;
+var wordOfTheDayNumber = todayWeekDay;
 var wordOfTheDay = wordOTDList[wordOfTheDayNumber];
 
 document.getElementById("wordDefinition").innerHTML = wordOTDDefinitionList[wordOfTheDayNumber];
