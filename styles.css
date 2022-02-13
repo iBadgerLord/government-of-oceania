@@ -367,10 +367,11 @@ a{
 }
 
 .text {
-    color: grey;
+    color: red;
     top: 50%;
     width: 100%;
-    font-size: xx-large;
+    font-size: 150px;
+  
 }
       
 @media screen {
