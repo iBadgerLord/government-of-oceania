@@ -366,13 +366,6 @@ a{
   font-family: Copperplate; 
 }
 
-.text {
-    color: red;
-    top: 50%;
-    width: 100%;
-    font-size: 150px;
-  
-}
       
 @media screen {
   .square-animation {
