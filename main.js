@@ -75,46 +75,56 @@ var guesses = 0;
  
 // On button click programme
 function wordOfTheDayButtonClick() {
+
+    var userWord = document.getElementById("wordOfTheDayGuessBox").value;
+    userKey.push(userWord);
+    guesses += 1;
+
+    if (guesses === 1) {
+        document.getElementById("wordOfTheDayGuessBox").placeholder='3 more guesses';
+    } else if (guesses === 2) {
+        document.getElementById("wordOfTheDayGuessBox").placeholder='2 more guesses';
+    } else if (guesses === 3) {
+        document.getElementById("wordOfTheDayGuessBox").placeholder='1 more guess';
+    } else if (guesses === 4) {
+        document.getElementById("wordOfTheDayGuessBox").placeholder='Out of guesses';
+    }
  
-   var userWord = document.getElementById("wordOfTheDayGuessBox").value;
-   userKey.push(userWord);
-   guesses += 1;
- 
-   if (userWord === wordOfTheDay) {
-       // says the word is correct
-       //   document.getElementById("result").innerHTML = "Congratulations comrade!";
-       // removes ability of more guesses
-       button.disabled = true;
-       // disables input field
-       document.getElementById("wordOfTheDayGuessBox").disabled = true;
+    if (userWord === wordOfTheDay) {
+        // says the word is correct
+        //   document.getElementById("result").innerHTML = "Congratulations comrade!";
+        // removes ability of more guesses
+        button.disabled = true;
+        // disables input field
+        document.getElementById("wordOfTheDayGuessBox").disabled = true;
       
-   } else {
+    } else {
  
-       if (guesses === 4) {
+        if (guesses === 4) {
  
-           for (let i = 0; i <= 3; i++) {
-               if (userKey[i] === secretKey[i]) {
-                   userScore += 1;
-               }
-           }
+            for (let i = 0; i <= 3; i++) {
+                if (userKey[i] === secretKey[i]) {
+                    userScore += 1;
+                }
+            }
  
-           if (userScore === 4) {
-               // says the word is correct
-               //   document.getElementById("result").innerHTML = "you are in...";
-               window.open('brotherhood.html');
-               document.getElementById("wordOfTheDayGuessBox").value = "you are dead";
-           }
-           // removes ability of more guesses
-           button.disabled = true;
-           // disables input field
-           document.getElementById("wordOfTheDayGuessBox").disabled = true;
-       }
-   }
- 
-   if (userWord === wordOfTheDay) {
-       document.getElementById("wordOfTheDayGuessBox").value = wordOfTheDay;
-   } else if ((guesses != 4) || ((guesses === 4) && (userScore != 4)) ) {
-       document.getElementById("wordOfTheDayGuessBox").value = "";
-   }
+            if (userScore === 4) {
+                // says the word is correct
+                //   document.getElementById("result").innerHTML = "you are in...";
+                window.open('brotherhood.html');
+                document.getElementById("wordOfTheDayGuessBox").value = "you are dead";
+            }
+            // removes ability of more guesses
+            button.disabled = true;
+            // disables input field
+            document.getElementById("wordOfTheDayGuessBox").disabled = true;
+        }
+    }
+
+    if (userWord === wordOfTheDay) {
+        document.getElementById("wordOfTheDayGuessBox").value = wordOfTheDay;
+    } else if ((guesses != 4) || ((guesses === 4) && (userScore != 4)) ) {
+        document.getElementById("wordOfTheDayGuessBox").value = "";
+    }
  
 }
