@@ -195,7 +195,6 @@ a{
   background-position: center;
 }
 
-
 /* Word of the Day Box */
 #art-2-2 {
   grid-area: art-2-2;
@@ -249,8 +248,6 @@ a{
 #wordDefinition {
   font-size: clamp(0.55rem, 1vw, 0.8rem); 
 }
-
-
 
 #art-2-3 {
   grid-area: art-2-3;
@@ -325,60 +322,6 @@ a{
 }
 
 
-
-/*=== Statistics Section ===*/
-
-/* Type writer Section */
-.typewriter {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em whitw; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0% auto; /* Gives that scrolling effect as the typing happens */
-  top: 40%;
-  font-family: Copperplate;
-  font-size:  180%;
-  color: black;
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 5s steps(40, end),
-    blink-caret .75s step-end infinite;
-}
-
-/* The typing effect */
-@keyframes typing {
-  from { width: 0% }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: black; }
-}
-      
-.square {
-  position: relative; 
-  width: 400px;
-  height: 400px;
-  background: black;
-  text-align: center;
-  left: 33%;
-  top: 100px;
-  font-size: 250%;
-  font-family: Copperplate; 
-}
-
-      
-@media screen {
-  .square-animation {
-    animation: wipe-enter 2s 5;
-  }
-  .statisticspicture {
-    width: 100px;
-    height: 100px;
-    text-align: center; 
-  }
-}
 
 /*=== Media Queries ===*/
 @media screen and (min-width: 768px){
