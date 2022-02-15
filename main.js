@@ -1,3 +1,6 @@
+/*===== AOS Animations =====*/
+AOS.init();
+
 /*===== SHOW NAVBAR  =====*/ 
 const showNavbar = (toggleId, navId, bodyId, headerId) =>{
     const toggle = document.getElementById(toggleId),
