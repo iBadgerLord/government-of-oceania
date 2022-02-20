@@ -1,1 +1,21 @@
+.community{
+    text-align: center;
+    margin: 0px 0px 2rem 0px;
+    font-size: 50px;
+}
+  
+.container{
+    width: 650px;
+    height: 700px;
+    border: 5px solid black;
+    margin: 0 auto;
+    background-color: grey;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    padding: 2rem;
+}
 
+#syme-letter {
+    font-size: 1.1rem;
+}
