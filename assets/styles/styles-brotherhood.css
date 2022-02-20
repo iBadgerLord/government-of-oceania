@@ -200,26 +200,26 @@ button {
 /*===== Resizings =====*/
 @media (max-width: 1330px) { 
 	.typewriter {
-		font-size: 1.5rem;
+		font-size: 1rem;
 	}
 	button {
-		font-size: 1.5rem;
+		font-size: 1rem;
 	}
 }
 @media (max-width: 1000px) { 
 	.typewriter {
-		font-size: 1rem;
+		font-size: 0.8rem;
 	}
 	button {
-		font-size: 1rem;
+		font-size: 0.8rem;
 	}
 }
 @media (max-width: 680px) { 
 	.typewriter {
-		font-size: 0.8rem;
+		font-size: 0.6rem;
 	}
 	button {
-		font-size: 0.8rem;
+		font-size: 0.6rem;
 	}
 	.overlay:before {
 		background-size: 100% 2px, 4px 100%;
@@ -227,25 +227,25 @@ button {
 }
 @media (max-width: 540px) { 
 	.typewriter {
-		font-size: 0.6rem;
+		font-size: 0.5rem;
 	}
 	button {
-		font-size: 0.6rem;
+		font-size: 0.5rem;
 	}
 }
 @media (max-width: 420px) { 
 	.typewriter {
-		font-size: 0.5rem;
+		font-size: 0.4rem;
 	}
 	button {
-		font-size: 0.5rem;
+		font-size: 0.4rem;
 	}
 }
 @media (max-width: 350px) { 
 	.typewriter {
-		font-size: 0.4rem;
+		font-size: 0.3rem;
 	}
 	button {
-		font-size: 0.4rem;
+		font-size: 0.3rem;
 	}
 }
