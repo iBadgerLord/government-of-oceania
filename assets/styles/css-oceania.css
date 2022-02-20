@@ -1,0 +1,486 @@
+/* Type writer Section */
+.typewriter {
+    position: relative;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em whitw; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0% auto; /* Gives that scrolling effect as the typing happens */
+    top: -250px;
+    font-family: Copperplate;
+    font-size:  180%;
+    color: white;
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0% }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black; }
+  }
+        
+  .square {
+    position: absolute; 
+    width: 450px;
+    height: 600px;
+    background: black;
+    text-align: center;
+    right: -170px;
+    transform: translateX(-50%);
+    top: 350px;
+    font-size: 250%;
+    font-family: Copperplate; 
+  }
+  
+        
+  @media screen {
+    .square-animation {
+      animation: wipe-enter 2s 5;
+    }
+    .statisticspicture {
+      width: 100%;
+      height: 100%;
+      
+      text-align: center; 
+    }
+  }
+  
+  :root {
+    font-family: Copperplate;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+  
+  .boxes {
+    display: flex;
+    width: 35vw;
+    position: absolute;
+    right: 3.5%;
+    transform: translateX(-5%);
+    top: 23%;
+    transform: translateY(-20%)
+  
+  }
+  
+  .box {
+    border: 3px solid black;
+    border-radius: 3px;
+    background-color: black;
+    flex: 1;
+    box-shadow: 0 8px 20px rgba(0,0,0,.25);
+    
+    &:not(:first-child) {
+      margin-left: 2rem;
+    }
+    
+    > .header {
+      font-size: 1.25rem;
+      background: black;
+      color: white;
+      padding: .75rem;
+      font-weight: bolder;
+      padding-left: 1.25rem;
+    }
+  }
+  
+  .content {
+    display: grid;
+    column-gap: .25ch;
+    row-gap: .25rem;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto;
+    padding: 1rem; 
+    color: yellowgreen;
+    font-family: Copperplate;
+    
+    {
+      margin: 0;
+      padding: 0;
+    }
+    
+    p:nth-child(3n-2) {
+      font-weight: bolder;
+      margin-right: .5ch;
+    }
+    
+    p:nth-child(3n-1) {
+      text-align: right;
+    }
+    
+    p:nth-child(3n) {
+      text-align: left;
+    }
+  }
+  .carousel {
+    overflow: hidden;
+    width: 800px;
+    height: 560px;
+    position: absolute;
+    top: 430px;
+    left: 150px;
+  
+  }
+  
+  .carousel .carousel__item,
+  .carousel .carousel__item--hidden {
+    display: none;
+  }
+  
+  .carousel .carousel__item img {
+    width: 100%;
+    height: max-content;
+    max-width: max-content;
+  }
+  
+  .carousel .carousel__item--visible {
+    display: block;
+    animation: fadeVisibility 0.5s;
+  }
+  
+  .carousel .carousel__actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .carousel .carousel__actions button {
+    border-radius: 50px;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .carousel .carousel__actions button#carousel__button--prev {
+    margin-left: 20px;
+  }
+  
+  .carousel .carousel__actions button#carousel__button--next {
+    margin-right: 20px;
+  }
+  
+  @keyframes fadeVisibility {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: opacity linear;
+    }
+  }
+  * {
+    box-sizing: border-box;
+  }
+   
+  .panel {
+    width: 750px;
+    height: 400px;
+    background: grey;
+    font-family: Copperplate;
+    box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+    border-radius: 6px;
+    overflow: hidden;
+    left: 150px;
+    top: -20px;
+    position: absolute;
+  
+  }
+  .panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    height: 60px;
+    background: black;
+  }
+   
+  .title {
+    color: white;
+    font-weight: 500;
+  }
+   
+  .calendar-views span {
+    font-size: 14px;
+    font-weight: 300;
+    font-family: Copperplate;
+    color: #BDC6CF;
+    padding: 6px 14px;
+    border: 2px solid transparent;
+  }
+  .panel-body {
+    display: flex;
+    height: 340px;
+    right: 50px;
+    bottom: 50px;
+  }
+  .categories {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 25%;
+    padding: 39px 0px 41px 26px;
+  }
+  .category {
+    display: flex;
+    flex-direction: column;
+  }
+  .category span:first-child {
+    font-weight: 300;
+    font-family: Copperplate;
+    font-size: 14px;
+    opacity: 0.6;
+    color: #fff;
+    margin-bottom: 6px;
+  }
+  .category span:last-child {
+    font-size: 32px;
+    font-family: Copperplate;
+    font-weight: 300;
+    color: #fff;
+  }
+  .chart {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 5;
+    position: relative;
+  }
+   
+  .operating-systems {
+    display: flex;
+    justify-content: space-between;
+    width: 215px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  span[class*="-os"] {
+    font-size: 12px;
+    font-weight: 300;
+    font-size: 14px;
+    color: #c3c6e4;  
+  }
+  span[class*="-os"] span {
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .android-os span {
+    background: #80B354;
+    width: fit-content;
+  }
+  .ios-os span {
+    background: #F5A623;
+  }
+  .windows-os span {
+    background: #F8E71C;
+  }
+  div[class*="-stats"] {
+    position: absolute;
+    color: #fff;
+    font-family: Copperplate;
+    font-size: 12px;
+    display: flex;
+    opacity: 0;
+    animation: showstats 0.6s linear 1.8s;
+    animation-fill-mode: forwards;  
+  }
+   
+  div[class*="-stats"] span {
+    height: 12px;
+    width: 12px;
+    margin: 0 7px;
+    background-color: #fff;
+    border: 2px solid transparent;
+    border-radius: 50%;  
+  }
+   
+  .android-stats {
+    bottom: 155px;
+    right: 100px;
+  }
+   
+  .ios-stats {
+    bottom: 83px;
+    left: 50px;
+  }
+   
+  .windows-stats {
+    bottom: 133px;
+    right: 62px;
+  }
+  div[class*="-stats"] span:hover {
+    transform: scale(1.4) rotate(0.02deg);
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+   
+  .dataset-1 {
+    animation: raise .8s linear 1;
+    transform-origin: bottom;
+  }
+  .dataset-2 {
+    animation: raise 1.6s linear 1;
+    transform-origin: bottom;
+  }
+  .dataset-3 {
+    animation: raise 1.8s linear 1;
+    transform-origin: bottom;
+  }
+   
+  .lines {
+    opacity: 0;
+    animation: showlines 0.6s linear 1.6s;
+    animation-fill-mode: forwards;  
+  }
+   
+  @keyframes showlines {
+    to { opacity: 0.2; }
+  }
+   
+  @keyframes showstats {
+    to { opacity: 1; }
+  }
+   
+  @keyframes raise {
+    0% { transform: scaleY(0.01); }
+    75% { transform: scaleY(1.1); }
+    100% { transform: scaleY(1); }
+  }
+  .startingpage {
+    width: 1000px;
+    height: 500px;
+    top: -200px; 
+    left:-400px;
+    position: absolute;
+    border: #3d3d3d;
+    border-radius: 5px;
+    background-image: url(https://www.omega-level.net/wp-content/uploads/2012/08/Big-Brother..png);
+    animation: mymove 2.5s;
+    
+  }
+  .welcomebox {
+    position: relative;
+    font-family: Copperplate;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 35%;
+    font-size: 100px;
+    width: fit-content;
+  
+  }
+  @keyframes mymove {
+    0% {top: -400px;}
+    100% {top: -200px;}
+  
+  }
+  .mappy {
+    position: absolute;
+    left: 480%;
+    top: -480%;
+  }
+  .mappy:hover {
+    transform: scale(1.3);
+  
+    }
+  button {
+  background: transparent;
+  border: none !important;
+  scroll-behavior: smooth;
+  animation: 1s;
+  }
+  .map {
+  top: 350px;
+  right: -500px ;
+  position: absolute;
+  border: #121212;
+  border-radius: 10px;
+  
+  }
+.animate-character {
+     text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      #000000 0%,
+      #231f27 29%,
+      #5a0017 67%,
+      #ffffff 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 150px;
+    color: #fff;
+    background-clip: text;
+    text-emphasis-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+        font-size: 40px;
+        position: absolute;
+        left: -480px;
+        top: 330px;
+        font-family: Copperplate;
+  
+}
+  
+@keyframes textclip {
+    to {
+      background-position: 150px center;
+    }
+}
+  
+@keyframes textclip {
+    to {
+      background-position: 150px center;
+    }
+}
+  .a {
+  position: absolute;
+  top: 1200px;
+  left: -450px;
+  
+  }
+  .b {
+    position: absolute;
+    top: 900px;
+    left: -450px;
+    
+    }
+    .c {
+      position: absolute;
+      top: 1500px;
+      left: -450px;
+      
+      }
+    .d {
+      position: absolute;
+      right: -570px;
+      top: 900px;
+    }
+    .e {
+      position: absolute;
+      right: -570px;
+      top: 1350px;
+}

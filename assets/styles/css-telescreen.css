@@ -1,0 +1,147 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
+
+/*=== Home Page Section ===*/
+.telescreen-main {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    'vid-1-1 vid-1-2'
+    'vid-1-3 vid-1-4'
+    'vid-1-5 vid-1-6'
+    'vid-1-7 vid-1-8';
+}
+
+/* Video Medium Section */
+.video-medium {
+  padding: 2rem;
+  position: relative;
+}
+.video-medium-text {
+  position: absolute;
+  bottom: 0;
+}
+.sub-section-name {
+  margin: 2px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+}
+.video-title {
+  margin: 2px;
+  position: bottom;
+  font-size: 42px;
+}
+/* Watch Now Section */
+.watch-now-btn {
+  display: flex;
+}
+.play-now-btn {
+  background: var(--background-color);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bx-play {
+  color: #fff;
+  font-size: 48px;
+  float: left;
+}
+.watch-now-text {
+  margin-top: 8px;  
+  margin-left: 20px;
+  font-size: 2rem;
+}
+
+/* Individual Videos */
+#vid-1-1 {
+  grid-area: vid-1-1;
+  min-height: 400px;
+
+  background: url(https://i.pinimg.com/originals/09/0c/06/090c0658afb2350efff9c2ac705d5fe9.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#vid-1-2 {
+  grid-area: vid-1-2;
+  min-height: 400px;
+
+  background: url(https://i.pinimg.com/originals/09/0c/06/090c0658afb2350efff9c2ac705d5fe9.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#vid-1-3 {
+  grid-area: vid-1-3;
+  min-height: 400px;
+
+  background: url(https://i.pinimg.com/originals/09/0c/06/090c0658afb2350efff9c2ac705d5fe9.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#vid-1-4 {
+  grid-area: vid-1-4;
+  min-height: 400px;
+
+  background: url(https://i.pinimg.com/originals/09/0c/06/090c0658afb2350efff9c2ac705d5fe9.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#vid-1-5 {
+  grid-area: vid-1-5;
+  min-height: 400px;
+
+  background: url(https://i.pinimg.com/originals/09/0c/06/090c0658afb2350efff9c2ac705d5fe9.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#vid-1-6 {
+  grid-area: vid-1-6;
+  min-height: 400px;
+
+  background: url(https://i.pinimg.com/originals/09/0c/06/090c0658afb2350efff9c2ac705d5fe9.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#vid-1-7 {
+  grid-area: vid-1-7;
+  min-height: 400px;
+
+  background: url(https://i.pinimg.com/originals/09/0c/06/090c0658afb2350efff9c2ac705d5fe9.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#vid-1-8 {
+  grid-area: vid-1-8;
+  min-height: 400px;
+
+  background: url(https://i.pinimg.com/originals/09/0c/06/090c0658afb2350efff9c2ac705d5fe9.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+/* Home Page Media Queries */
+@media (max-width: 768px) {
+  .telescreen-main {
+    grid-template-areas:
+        'vid-1-1'
+        'vid-1-2'
+        'vid-1-3'
+        'vid-1-4'
+        'vid-1-5'
+        'vid-1-6'
+        'vid-1-7'
+        'vid-1-8';
+  }
+  
+}
