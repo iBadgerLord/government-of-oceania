@@ -44,8 +44,8 @@
         <div class="terminalNavigation">
             <p>Navigation:</p>
             <a class="hyperlink" href="#body">main</a><br>
-            <button id="archivesButton" onclick="showDiv(document.getElementById('archives'))"><a class="hyperlink" href="#archives">archives</a><br></button><br>
-            <button id="communityButton" onclick="showDiv(document.getElementById('community'))"><a class="hyperlink" href="#community">community</a></button><br><br>
+            <button class="typewriter" id="archivesButton" onclick="showDiv(document.getElementById('archives'))"><a class="hyperlink" href="#archives">archives</a><br></button><br>
+            <button class="typewriter" id="communityButton" onclick="showDiv(document.getElementById('community'))"><a class="hyperlink" href="#community">community</a></button><br><br>
         </div>
 
         <div id="archives">
@@ -56,14 +56,14 @@
 
             <div id="archivesText">
                 <p>Archives:</p>
-                <button onclick="fail">01-02-20022022-404GoldsteinSpeechLondon</button><br>
-                <button onclick="fail">02-02-20022022-404VideoEvidenceEastasia</button><br>
-                <button onclick="fail">03-02-20022022-404VideoEvidenceEurasia</button><br>
-                <button onclick="fail">04-02-20022022-404GoldsteinSpeechBristol</button><br>
-                <button onclick="fail">05-02-20022022-404ListRebelsFoundAndDead</button><br>
-                <button onclick="transcriptDownload"><a href="assets/interview_transcript.pdf" download="06-02-20022022-FoundInterviewTranscriptCase">06-02-20022022-FoundInterviewTranscriptCase</a></button><br>
-                <button onclick="fail">07-02-20022022-404VideoEvidenceNoBB</button><br>
-                <button onclick="fail">08-02-20022022-404GoldsteinSpeechAberdeen</button><br><br>
+                <button class="typewriter" onclick="failedDownload()">01-02-20022022-404GoldsteinSpeechLondon</button><br>
+                <button class="typewriter" onclick="failedDownload()">02-02-20022022-404VideoEvidenceEastasia</button><br>
+                <button class="typewriter" onclick="failedDownload()">03-02-20022022-404VideoEvidenceEurasia</button><br>
+                <button class="typewriter" onclick="failedDownload()">04-02-20022022-404GoldsteinSpeechBristol</button><br>
+                <button class="typewriter" onclick="failedDownload()">05-02-20022022-404ListRebelsFoundAndDead</button><br>
+                <button class="typewriter" ><a href="assets/interview_transcript.pdf" download="06-02-20022022-FoundInterviewTranscriptCase">06-02-20022022-FoundInterviewTranscriptCase</a></button><br>
+                <button class="typewriter" onclick="failedDownload()">07-02-20022022-404VideoEvidenceNoBB</button><br>
+                <button class="typewriter" onclick="failedDownload()">08-02-20022022-404GoldsteinSpeechAberdeen</button><br><br>
             </div>
 
         </div>
@@ -81,36 +81,28 @@
 
                     <br><p>Latest Meetings:</p>
 
-                    <button class="communityButton" onclick="signUp('m1')">20022022-0114-London-TheGuinea :: sign up?</button>
-                    <p class="communitySpacer">a</p><p id="m1" class="communityYesOrNo">no</p>
+                    <button class="communityButton typewriter" onclick="signUp('m1')">20022022-0114-London-TheGuinea :: sign up? <p id="m1" class="communityYesOrNo">no</p> </button>
                     <br>
 
-                    <button class="communityButton" onclick="signUp('m2')">20022022-0525-London-Hoop&Grapes :: sign up?</button>
-                    <p class="communitySpacer">a</p><p id="m2" class="communityYesOrNo">no</p>
+                    <button class="communityButton typewriter" onclick="signUp('m2')">20022022-0525-London-Hoop&Grapes :: sign up? <p id="m2" class="communityYesOrNo">no</p></button>
                     <br>
 
-                    <button class="communityButton" onclick="signUp('m3')">20022022-0645-London-TheOldBell :: sign up?</button>
-                    <p class="communitySpacer">a</p><p id="m3" class="communityYesOrNo">no</p>
+                    <button class="communityButton typewriter" onclick="signUp('m3')">20022022-0645-London-TheOldBell :: sign up? <p id="m3" class="communityYesOrNo">no</p></button>
                     <br>
 
-                    <button class="communityButton" onclick="signUp('m4')">20022022-1105-London-YeOldeMitre :: sign up?</button>
-                    <p class="communitySpacer">a</p><p id="m4" class="communityYesOrNo">no</p>
+                    <button class="communityButton typewriter" onclick="signUp('m4')">20022022-1105-London-YeOldeMitre :: sign up? <p id="m4" class="communityYesOrNo">no</p></button>
                     <br>
-                    
-                    <button class="communityButton" onclick="signUp('m5')">20022022-1505-London-TheGeorgeInn :: sign up?</button>
-                    <p class="communitySpacer">a</p><p id="m5" class="communityYesOrNo">no</p>
+                        
+                    <button class="communityButton typewriter" onclick="signUp('m5')">20022022-1505-London-TheGeorgeInn :: sign up? <p id="m5" class="communityYesOrNo">no</p></button>
                     <br>
 
-                    <button class="communityButton" onclick="signUp('m6')">20022022-2052-London-TheSevenStars :: sign up?</button>
-                    <p class="communitySpacer">a</p><p id="m6" class="communityYesOrNo">no</p>
+                    <button class="communityButton typewriter" onclick="signUp('m6')">20022022-2052-London-TheSevenStars :: sign up? <p id="m6" class="communityYesOrNo">no</p></button>
                     <br>
 
-                    <button class="communityButton" onclick="signUp('m7')">20022022-2116-London-TheMayflower :: sign up?</button>
-                    <p class="communitySpacer">a</p><p id="m7" class="communityYesOrNo">no</p>
+                    <button class="communityButton typewriter" onclick="signUp('m7')">20022022-2116-London-TheMayflower :: sign up? <p id="m7" class="communityYesOrNo">no</p></button>
                     <br>
 
-                    <button class="communityButton" onclick="signUp('m8')">20022022-2153-London-TheGrapes :: sign up?</button>
-                    <p class="communitySpacer">a</p><p id="m8" class="communityYesOrNo">no</p>
+                    <button class="communityButton typewriter" onclick="signUp('m8')">20022022-2153-London-TheGrapes :: sign up? <p id="m8" class="communityYesOrNo">no</p></button>
                     <br>
 
                 </div>
@@ -119,37 +111,29 @@
 
                     <br><p>Latest Events:</p>
 
-                    <button class="communityButton" onclick="signUp('e1')">20022022-0331-London-MinistryOfLove :: Sabotage Ministry of Love records :: sign up? </button>
-                    <p class="communitySpacer">a</p><p id="e1" class="communityYesOrNo">no</p>
-                    <br>
+                        <button class="communityButton typewriter" onclick="signUp('e1')">20022022-0331-London-MinistryOfLove :: Sabotage Ministry of Love records :: sign up? <p id="e1" class="communityYesOrNo">no</p></button>
+                        <br>
 
-                    <button class="communityButton" onclick="signUp('e2')">20022022-0946-London-MinistryOfTruth :: Sabotage Ministry of Truth archives :: sign up? </button>
-                    <p class="communitySpacer">a</p><p id="e2" class="communityYesOrNo">no</p>
-                    <br>
+                        <button class="communityButton typewriter" onclick="signUp('e2')">20022022-0946-London-MinistryOfTruth :: Sabotage Ministry of Truth archives :: sign up? <p id="e2" class="communityYesOrNo">no</p></button>
+                        <br>
 
-                    <button class="communityButton" onclick="signUp('e3')">20022022-1113-London-ProleQuarters :: Spread rumours in prole quarters :: sign up? </button>
-                    <p class="communitySpacer">a</p><p id="e3" class="communityYesOrNo">no</p>
-                    <br>
+                        <button class="communityButton typewriter" onclick="signUp('e3')">20022022-1113-London-ProleQuarters :: Spread rumours in prole quarters :: sign up? <p id="e3" class="communityYesOrNo">no</p></button>
+                        <br>
 
-                    <button class="communityButton" onclick="signUp('e4')">20022022-1258-London-ProleQuarters :: Buy old artefacts in prole quarters :: sign up? </button>
-                    <p class="communitySpacer">a</p><p id="e4" class="communityYesOrNo">no</p>
-                    <br>
+                        <button class="communityButton typewriter" onclick="signUp('e4')">20022022-1258-London-ProleQuarters :: Buy old artefacts in prole quarters :: sign up? <p id="e4" class="communityYesOrNo">no</p></button>
+                        <br>
 
-                    <button class="communityButton" onclick="signUp('e5')">20022022-1356-London-ProleQuarters :: Hide old books in prole quarters :: sign up? </button>
-                    <p class="communitySpacer">a</p><p id="e5" class="communityYesOrNo">no</p>
-                    <br>
+                        <button class="communityButton typewriter" onclick="signUp('e5')">20022022-1356-London-ProleQuarters :: Hide old books in prole quarters :: sign up? <p id="e5" class="communityYesOrNo">no</p></button>
+                        <br>
 
-                    <button class="communityButton" onclick="signUp('e6')">20022022-1655-London-MinistryOfPLenty :: Sabotage Ministry of Plenty resources :: sign up? </button>
-                    <p class="communitySpacer">a</p><p id="e6" class="communityYesOrNo">no</p>
-                    <br>
+                        <button class="communityButton typewriter" onclick="signUp('e6')">20022022-1655-London-MinistryOfPLenty :: Sabotage Ministry of Plenty resources :: sign up? <p id="e6" class="communityYesOrNo">no</p></button>
+                        <br>
 
-                    <button class="communityButton" onclick="signUp('e7')">20022022-2007-London-VictorySquare :: Break telescreens in Victory Square :: sign up? </button>
-                    <p class="communitySpacer">a</p><p id="e7" class="communityYesOrNo">no</p>
-                    <br>
+                        <button class="communityButton typewriter" onclick="signUp('e7')">20022022-2007-London-VictorySquare :: Break telescreens in Victory Square :: sign up? <p id="e7" class="communityYesOrNo">no</p></button>
+                        <br>
 
-                    <button class="communityButton" onclick="signUp('e8')">20022022-2009-London-MinistryOfTruth :: Sabotage Ministry of Truth archives :: sign up? </button>
-                    <p class="communitySpacer">a</p><p id="e8" class="communityYesOrNo">no</p>
-                    <br>
+                        <button class="communityButton typewriter" onclick="signUp('e8')">20022022-2009-London-MinistryOfTruth :: Sabotage Ministry of Truth archives :: sign up? <p id="e8" class="communityYesOrNo">no</p></button>
+                        <br>
 
                 </div>
 
@@ -161,5 +145,7 @@
 
     <!--===== MAIN JS =====-->
     <script src="assets/programme/js-brotherhood.js"></script>
+
+    <!-- https://www.youtube.com/watch?v=w1nhwUGsG6M -->
 
 </body>
