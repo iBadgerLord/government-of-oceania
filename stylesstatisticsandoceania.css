@@ -1,6 +1,201 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
 
+/* Variables */
+:root{
+  --header-height: 3rem;
+  --nav-width: 68px;
+  /* Colors */
+  --background-color: #3d3d3d;
+  --first-color: #121212;
+  --first-color-light: #b3b3b3;
+  --white-color: #F7F6FB;
+  /* Font and typography */
+  --body-font: 'Nunito', sans-serif;
+  --normal-font-size: 1rem;
+  /* z index */
+  --z-fixed: 100;
+}
+
+/*=== General Theme ===*/
+
+/* Base */
+*,::before,::after{
+  box-sizing: border-box;
+}
+body{
+  position: relative;
+  margin: var(--header-height) 0 0 0;
+  padding: 2rem;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  transition: .5s;
+  background-color: var(--background-color);
+  color: var(--white-color);
+}
+a{
+  text-decoration: none;
+}
+
+/* Header */
+.header{
+  width: 100%;
+  height: var(--header-height);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  background-color: #282828;
+  z-index: var(--z-fixed);
+  transition: .5s;
+}
+.header__toggle{
+  color: var(--white-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.header-title {
+  font-size: clamp(1.2rem, 3vw, 2.5rem);
+}
+.header__img{
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.header__img img{
+  width: 40px;
+}
+
+/* Nav */
+.l-navbar{
+  position: fixed;
+  top: 0;
+  left: -30%;
+  width: var(--nav-width);
+  height: 100vh;
+  background-color: var(--first-color);
+  padding: .5rem 1rem 0 0;
+  transition: .5s;
+  z-index: var(--z-fixed);
+}
+.nav{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.nav__logo, .nav__link{
+  display: grid;
+  grid-template-columns: max-content max-content;
+  align-items: center;
+  column-gap: 1rem;
+  padding: .5rem 0 .5rem 1.5rem;
+}
+.nav__logo{
+  margin-bottom: 2rem;
+}
+.nav__logo-icon{
+  font-size: 1.25rem;
+  color: var(--white-color);
+}
+.nav__logo-name{
+  color: var(--white-color);
+  font-weight: 700;
+}
+.nav__link{
+  position: relative;
+  color: var(--first-color-light);
+  margin-bottom: 1.5rem;
+  transition: .3s;
+}
+.nav__link:hover{
+  color: var(--white-color);
+}
+.nav__icon{
+  font-size: 1.25rem;
+}
+.nav__bx-group {
+  font-size: 3rem;
+}
+
+/* show navbar movil */
+.show{
+  left: 0;
+}
+/* add padding body movil */
+.body-pd{
+  padding-left: calc(var(--nav-width) + 1rem);
+}
+/* active links */
+.active{
+  color: var(--white-color);
+}
+.active::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 2px;
+  height: 32px;
+  background-color: var(--white-color);
+}
+
+
+
+/*=== Home Page Section ===*/
+.index-main {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    'art-1-1 art-1-1 art-1-1 art-2-1'
+    'art-1-1 art-1-1 art-1-1 art-2-2'
+
+    'art-2-3 art-2-4 art-2-5 art-2-6'
+
+    'art-2-7 art-1-2 art-1-2 art-1-2'
+    'art-2-8 art-1-2 art-1-2 art-1-2'
+
+    'art-3-1 art-3-1 art-3-2 art-3-2';
+}
+
+/* Individual Articles */
+#art-1-1 {
+  grid-area: art-1-1;
+  min-height: 600px;
+  padding: 3rem;
+
+  background: url(https://images.unsplash.com/photo-1644046965430-3b2470f450e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1376&q=80);
+  background-size: cover;
+  background-position: center;
+
+}
+
+#art-1-2 {
+  grid-area: art-1-2;
+  min-height: 600px;
+  padding: 3rem;
+
+  background: url(https://images.unsplash.com/photo-1643509325029-ebe18f2f34c8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+  background-size: cover;
+  background-position: center;
+}
+
+#art-2-1 {
+  grid-area: art-2-1;
+  min-height: 200px;
+
+  background: url(https://images.unsplash.com/photo-1524843705492-4fd5724857a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80);
+  background-size: cover;
+  background-position: center;
+}
+
+
 /* Type writer Section */
 .typewriter {
   position: relative;
