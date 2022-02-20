@@ -1,5 +1,5 @@
 /*===== GOOGLE FONTS =====*/
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 /* Variables */
 :root{
@@ -12,7 +12,7 @@
   --white-color: #F7F6FB;
   --header-background: #282828;
   /* Font and typography */
-  --body-font: 'Nunito', sans-serif;
+  --body-font: 'Roboto Slab', serif;
   --normal-font-size: 1rem;
   /* z index */
   --z-fixed: 100;
@@ -41,13 +41,11 @@ a{
 /* Header */
 .header{
   width: 100%;
-  height: var(--header-height);
   position: fixed;
   top: 0;
   left: 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 0 1rem;
   background-color: var(--header-background);
   z-index: var(--z-fixed);
@@ -58,19 +56,20 @@ a{
   font-size: 1.5rem;
   cursor: pointer;
 }
+.header-img {
+  padding: 0 20px 0 20px;
+}
+.header-img img{
+  margin-top: 4px;
+  width: 25px;
+}
 .header-title {
   font-size: clamp(1.2rem, 3vw, 2.5rem);
+  padding: 0 20px 0 0;
 }
-.header__img{
-  width: 35px;
-  height: 35px;
-  display: flex;
-  justify-content: center;
-  border-radius: 50%;
-  overflow: hidden;
-}
-.header__img img{
-  width: 40px;
+.header-subtitle {
+  display: none;  
+  padding: 0 20px 0 0;
 }
 
 /* Nav */
@@ -161,12 +160,12 @@ a{
     height: calc(var(--header-height) + 1rem);
     padding: 0 2rem 0 calc(var(--nav-width) + 2rem);
   }
-  .header__img{
-    width: 40px;
-    height: 40px;
+  .header-subtitle {
+    display: block;
+    font-size: 0.70rem;
   }
-  .header__img img{
-    width: 45px;
+  .header-img img{
+    width: 40px;
   }
   .l-navbar{
     left: 0;
