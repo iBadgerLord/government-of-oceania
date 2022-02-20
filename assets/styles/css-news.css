@@ -1,1 +1,59 @@
+.over{
+    text-align: center;
+    padding: 0 1rem;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    color: white;
+    width: 100%;
+    height: 100%;
+}
 
+  .under{
+    text-align: left;
+    margin: var(--header-height) 0 0 0;
+    padding: 0 10rem;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    color: white;
+    height: 100%;
+}
+
+.image {
+    text-align: center;
+}
+  
+.articles {
+    display: flex;
+    justify-content: center;
+}
+
+.potato{
+    font-size: 24px;
+    text-align: center;
+    width: 300px;
+    height: 200px;
+    background-color: rgb(22, 20, 20);
+    float: left;
+    border: 5px solid black;
+    margin: 20px 10px 0 10px;
+    background-position: bottom;
+}
+  
+.center{
+  text-align: center;
+  font-size: 40px;
+  color: white;
+}
+
+#potato1 {
+    background: url(https://cdn-cdaac.nitrocdn.com/tFOqLIaMYIaFjSGNUoYXbEDiJHtqbEtH/assets/static/optimized/rev-7fdb227/wp-content/uploads/2014/11/140828132531-01-world-war-ii-0828-horizontal-large-gallery.jpg);
+}
+#potato2 {
+    background: url(https://upload.wikimedia.org/wikipedia/commons/b/bf/Ww2_158.jpg);
+}
+#potato3 {
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/92nd-Divisionmassaitaly1944.jpg/1200px-92nd-Divisionmassaitaly1944.jpg);
+}
+#potato4 {
+    background: url(https://i2-prod.stokesentinel.co.uk/incoming/article1145522.ece/ALTERNATES/s1200c/Oswald-Mosley.png);
+}
