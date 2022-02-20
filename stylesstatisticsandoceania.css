@@ -196,6 +196,138 @@ a{
 }
 
 
+/* Word of the Day Box */
+#art-2-2 {
+  grid-area: art-2-2;
+  min-height: 200px;
+  position: relative;
+  text-align: center;
+  border:3px solid black;
+}
+.word-of-the-day-box {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding: clamp(0.5rem, 1vw, 2rem);
+}
+#wordOfTheDayHeader {
+  font-weight: bold;
+  font-size: clamp(1rem, 1vw, 2rem); 
+}
+#word-of-the-day-DATE {
+  font-size: clamp(0.5rem, 1vw, 1rem); 
+}
+#wordOfTheDayGuessBox {
+  width: clamp(50%, 1vw, 95%);
+  padding: 0.2rem;
+  font-size: clamp(0.5rem, 1vw, 1rem); 
+  background-color: transparent;
+  font-family: var(--body-font);
+  color: var(--white-color);
+  text-align: center;
+  border-color: var(--white-color);
+  border-style: solid;
+}
+#wordOfTheDayGuessBox:disabled {
+  color: var(--light-gray-2);
+  border-color: var(--light-gray-2);
+}
+#submitGuessButton {
+  margin-top: clamp(0.1rem, 1vw, 1rem);
+  background-color: transparent;
+  font-size: clamp(0.5rem, 1vw, 1rem); 
+  font-family: var(--body-font);
+  color: var(--white-color);
+  border-color: var(--white-color);
+  border-style: solid;
+}
+#submitGuessButton:disabled {
+  color: var(--light-gray-2);
+  border-color: var(--light-gray-2);
+}
+#wordDefinition {
+  font-size: clamp(0.55rem, 1vw, 0.8rem); 
+}
+
+
+
+#art-2-3 {
+  grid-area: art-2-3;
+  min-height: 200px;
+
+  background: url(https://images.unsplash.com/photo-1643832678771-fdd9ed7638ae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80);
+  background-size: cover;
+  background-position: center;
+}
+
+#art-2-4 {
+  grid-area: art-2-4;
+  min-height: 200px;
+
+  background: url(https://images.unsplash.com/photo-1643585816962-70710f40f40f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80);
+  background-size: cover;
+  background-position: center;
+}
+
+#art-2-5 {
+  grid-area: art-2-5;
+  min-height: 200px;
+
+  background: url(https://images.unsplash.com/photo-1643819998083-b558a18a263a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80);
+  background-size: cover;
+  background-position: center;
+}
+
+#art-2-6 {
+  grid-area: art-2-6;
+  min-height: 200px;
+
+  background: url(https://images.unsplash.com/photo-1643749290194-e12f495a6a28?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80);
+  background-size: cover;
+  background-position: center;
+}
+
+#art-2-7 {
+  grid-area: art-2-7;
+  min-height: 200px;
+
+  background: url(https://images.unsplash.com/photo-1643678748506-856b98cfdc81?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1291&q=80);
+  background-size: cover;
+  background-position: center;
+}
+
+#art-2-8 {
+  grid-area: art-2-8;
+  min-height: 200px;
+
+  background: url(https://images.unsplash.com/photo-1643586712875-fcdbd458a4d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80);
+  background-size: cover;
+  background-position: center;
+}
+
+#art-3-1 {
+  grid-area: art-3-1;
+  min-height: 300px;
+
+  background: url(https://images.unsplash.com/photo-1643379840406-ab382274409d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+  background-size: cover;
+  background-position: center;
+}
+
+#art-3-2 {
+  grid-area: art-3-2;
+  min-height: 300px;
+
+  background: url(https://images.unsplash.com/photo-1642548666500-7990b88e691f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1278&q=80);
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+/*=== Statistics Section ===*/
+
 /* Type writer Section */
 .typewriter {
   position: relative;
@@ -683,3 +815,93 @@ left: -450px;
     right: -570px;
     top: 1350px;
   }
+/*=== Media Queries ===*/
+@media screen and (min-width: 768px){
+  
+  /* General Theme Media Queries */
+  body{
+    margin: calc(var(--header-height) + 1rem) 0 0 0;
+    padding-left: calc(var(--nav-width) + 2rem);
+  }
+  .header{
+    height: calc(var(--header-height) + 1rem);
+    padding: 0 2rem 0 calc(var(--nav-width) + 2rem);
+  }
+  .header__img{
+    width: 40px;
+    height: 40px;
+  }
+  .header__img img{
+    width: 45px;
+  }
+  .l-navbar{
+    left: 0;
+    padding: 1rem 1rem 0 0;
+  }
+  /*Show navbar desktop*/
+  .show{
+    width: calc(var(--nav-width) + 156px);
+  }
+  /*Add padding body desktop*/
+  .body-pd{
+    padding-left: calc(var(--nav-width) + 188px);
+  }
+
+}
+
+/* Home Page Media Queries */
+@media (max-width: 768px) {
+  .index-main {
+    grid-template-areas:
+        'art-1-1 art-1-1'
+        'art-2-1 art-2-2'
+
+        'art-2-3 art-2-4'
+        'art-2-5 art-2-6'
+
+        'art-1-2 art-1-2'
+        'art-2-7 art-2-8'
+
+        'art-3-1 art-3-1'
+        'art-3-2 art-3-2';
+  }
+  .word-of-the-day-box {
+    padding: clamp(1rem, 1vw, 3rem);
+  }
+  #wordOfTheDayHeader {
+    font-weight: bold;
+    margin: clamp(0rem, 1vw, 0rem);
+    font-size: clamp(1rem, 1vw, 2rem); 
+  }
+  #wordDefinition {
+    font-size: clamp(0.5rem, 1vw, 1rem); 
+  }
+  
+}
+@media (max-width: 500px) { 
+  .index-main {
+      grid-template-areas:
+          'art-1-1'
+          'art-2-1'
+          'art-2-2'
+
+          'art-2-3'
+          'art-2-4'
+          'art-2-5'
+          'art-2-6'
+
+          'art-1-2'
+          'art-2-7'
+          'art-2-8'
+
+          'art-3-1'
+          'art-3-2';
+  }
+  .word-of-the-day-box {
+    position: relative;
+    padding: clamp(0.9rem, 1vw, 2rem);
+  }
+  #wordDefinition {
+    font-size: clamp(0.8rem, 1vw, 1.5rem); 
+  }
+}
