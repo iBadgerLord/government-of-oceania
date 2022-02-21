@@ -12,41 +12,27 @@
     'art-2-8 art-1-2 art-1-2 art-1-2'
 
     'art-3-1 art-3-1 art-3-2 art-3-2';
+  grid-auto-columns: minmax(0, 1fr);
+  grid-auto-flow: column;    
 }
 
 /* Individual Articles */
 #art-1-1 {
   grid-area: art-1-1;
   min-height: 600px;
-  padding: 3rem;
-
+}
+#art-img-1 {
   background: url(https://cdn.britannica.com/49/180249-138-22915E2F/Overview-Nurnberg-trials.jpg);
   background-size: cover;
   background-position: center;
 }
 
-.article-specs {
-  text-shadow: #000 1px 0 10px;
-  color: #fff;
-}
-.article-title {
-  font-size: 50px;
-}
-
-.article-small-specs {
-  position: absolute;
-  bottom: 1rem;
-  font-size: 25px;
-  color: #fff;
-  text-shadow: #000 1px 0 10px;
-}
-
 #art-1-2 {
   grid-area: art-1-2;
   min-height: 600px;
-  padding: 3rem;
-
-  background: url(https://images.unsplash.com/photo-1643509325029-ebe18f2f34c8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+}
+#art-img-2 {
+  background: url(https://www.aeroclubsocal.org/wp-content/uploads/2018/08/iStock_000018904587.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -54,11 +40,11 @@
 #art-2-1 {
   grid-area: art-2-1;
   min-height: 200px;
-  padding: 1rem;
-
+}
+#art-img-3 {
   background: url(http://afflictor.com/wp-content/uploads/2016/11/sir-oswald-mosley.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: top;
 }
 
 #art-2-2 {
@@ -68,16 +54,100 @@
   background-size: cover;
   background-position: center;
   position: relative;
-  background-color: #555555;
+  background-color: #5a5a5a;
   box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
   padding-bottom: 40px;
   border-radius: 3px;
+}
 
+#art-2-3 {
+  grid-area: art-2-3;
+  min-height: 250px;
+}
+#eve-img-1 {
+  background: url(https://images.unsplash.com/photo-1588412079929-790b9f593d8e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+  background-size: cover;
+  background-position: center;
+}
+
+#art-2-4 {
+  grid-area: art-2-4;
+  min-height: 250px;
+}
+#eve-img-2 {
+  background: url(https://images.unsplash.com/photo-1645019517242-c3c377659fb2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+  background-size: cover;
+  background-position: bottom;  
+}
+
+#art-2-5 {
+  grid-area: art-2-5;
+  min-height: 250px;
+}
+#eve-img-3 {
+  background: url(https://imaginoso.com/files/belarus/minsk/2103-victory-square-victory-monument-1292.jpg);
+  background-size: cover;
+  background-position: center;  
+}
+
+#art-2-6 {
+  grid-area: art-2-6;
+  min-height: 250px;
+}
+#eve-img-4 {
+  background: url(https://eu-assets.simpleview-europe.com/surrey/imageresizer/?image=%2Fdmsimgs%2FView_from_Box_Hill950x545_984138296.jpg&action=ProductDetail);
+  background-size: cover;
+  background-position: center;  
+}
+
+#art-2-7 {
+  grid-area: art-2-7;
+  min-height: 200px;
+}
+#art-img-4 {
+  background: url(https://img.haarets.co.il/img/1.10368741/900591791.jpg?precrop=1357,1360,x702,y114&width=1200&height=1200);
+  background-size: cover;
+  background-position: center;
+}
+
+#art-2-8 {
+  grid-area: art-2-8;
+  min-height: 200px;
+}
+#art-img-5 {
+  background: url(https://qph.fs.quoracdn.net/main-qimg-9f37f98e23813d1f85d5bcf90ff88c40-lq);
+  background-size: cover;
+  background-position: center;
+}
+
+#art-3-1 {
+  grid-area: art-3-1;
+  min-height: 300px;
+
+  background: url(https://i2-prod.northantslive.news//article4184920.ece/ALTERNATES/s1200b/1_Barratt-Shoe-Ltd-factory-Northampton.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#art-3-2 {
+  grid-area: art-3-2;
+  min-height: 300px;
+
+  background: url(https://www.history.com/.image/t_share/MTU3ODc4NjAyNDUyNDQ0NDg5/image-placeholder-title.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* General Article Values */
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
 }
 
 /* Word of the Box */
-.art-2-2 {
-  position: absolute;
+.wotd {
   width: 100%;
   height: 100%;
 }
@@ -94,7 +164,7 @@ h1 {
 
   font-size: clamp(10px, 1vw, 18px);
   background: var(--first-color);
-  color: white;
+  color: #fff;
   text-align: center;
 
   line-height: 150%;
@@ -121,7 +191,7 @@ h1 {
   font-size: clamp(11px, 1vw, 14px);
   text-align: center;
   padding: 0 20px 0;
-  color: white;
+  color: #fff;
 }
 .guessing {
   align-items: center;
@@ -145,7 +215,7 @@ input {
   background-position: -500px 0;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  color: white;
+  color: #fff;
 }
 input:focus, input:valid {
   box-shadow: none;
@@ -158,7 +228,7 @@ input:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder {
   visibility: visible !important;
 }
 input::placeholder{
-  color: white;
+  color: #fff;
 }
 button {
   font-size: 14px;
@@ -170,102 +240,43 @@ button {
   border-radius: 3px;
   padding: 6px;
   width: 100%;
-  color: white;
+  color: #fff;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
 }
 button:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
 }
-
-#art-2-3 {
-  grid-area: art-2-3;
-}
-
-#art-2-4 {
-  grid-area: art-2-4;
-}
-
-#art-2-5 {
-  grid-area: art-2-5;
-}
-
-#art-2-6 {
-  grid-area: art-2-6;
-}
-
-#art-2-7 {
-  grid-area: art-2-7;
-  min-height: 200px;
-
-  background: url(https://images.unsplash.com/photo-1643678748506-856b98cfdc81?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1291&q=80);
-  background-size: cover;
-  background-position: center;
-}
-
-#art-2-8 {
-  grid-area: art-2-8;
-  min-height: 200px;
-
-  background: url(https://images.unsplash.com/photo-1643586712875-fcdbd458a4d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80);
-  background-size: cover;
-  background-position: center;
-}
-
-#art-3-1 {
-  grid-area: art-3-1;
-  min-height: 300px;
-
-  background: url(https://images.unsplash.com/photo-1643379840406-ab382274409d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
-  background-size: cover;
-  background-position: center;
-}
-
-#art-3-2 {
-  grid-area: art-3-2;
-  min-height: 300px;
-
-  background: url(https://images.unsplash.com/photo-1642548666500-7990b88e691f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1278&q=80);
-  background-size: cover;
-  background-position: center;
-}
-
-
+/* Community Event */
 .community-event {
-  background-color: #555555;
   border-radius: 3px 3px 3px 3px;
   box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2);
-  box-sizing: border-box;
-  min-height: 200px;
-  position: relative;
 }
-.community-event details {
-  position: absolute;
+.event {
   height: 100%;
+  width: 100%;
 }
-.details-specified {
-  height: 100%;
-}
-.event-image {
+.event-img {
+  background-color: red;
   position: relative;
-  background: url(https://images.agoramedia.com/everydayhealth/gcms/Best-Yoga-Mats-Intro-722x406.jpg?width=722);
-  background-size: cover;
-  background-position: bottom;
-
+  height: 40%;
+  width: 100%;
   border-radius: 3px 3px 0 0;
-  height: 70px;
-  background-color: pink;
 }
-.under-event {
+.event-text {
+  padding: 0.8rem;
+  position: relative;
   height: 60%;
-  padding: 0.5rem;
+  width: 100%;
+  background-color: #5a5a5a;
+  border-radius: 0 0 3px 3px;
 }
 .event-title {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 .event-day-location {
   margin-top: 5px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 .event-info {
   margin: 0 10px 0 0;
@@ -288,17 +299,19 @@ button:hover {
   position: relative;
 }
 .circle2 {
-  left: -15px;
+  left: -10px;
   background-color: blue;
 }
 .circle3 {
-  left: -30px;
+  left: -20px;
   background-color: yellow;
+  display: block;
 }
 .and-more {
   position: relative;
   display: inline-block;
-  left: -20px;
+  left: -10px;
+  font-size: 0.9rem;
 }
 .register {
   position: absolute;
@@ -307,8 +320,154 @@ button:hover {
 }
 .registerBtn {
   height: 40px;
-  width: 100px;
+  width: 150px;
 }
+/* Circles 1 */
+#eve-1-cr-1 {
+  background: url(https://randomuser.me/api/portraits/men/36.jpg);
+  background-size: cover;
+  background-position: center;  
+}
+#eve-1-cr-2 {
+  background: url(https://randomuser.me/api/portraits/men/13.jpg);
+  background-size: cover;
+  background-position: center;  
+}
+#eve-1-cr-3 {
+  background: url(https://randomuser.me/api/portraits/men/26.jpg);
+  background-size: cover;
+  background-position: center;  
+}
+/* Circles 2 */
+#eve-2-cr-1 {
+  background: url(https://randomuser.me/api/portraits/women/72.jpg);
+  background-size: cover;
+  background-position: center;  
+}
+#eve-2-cr-2 {
+  background: url(https://randomuser.me/api/portraits/men/90.jpg);
+  background-size: cover;
+  background-position: center;  
+}
+#eve-2-cr-3 {
+  background: url(https://randomuser.me/api/portraits/women/88.jpg);
+  background-size: cover;
+  background-position: center;  
+}
+/* Circles 3 */
+#eve-3-cr-1 {
+  background: url(https://randomuser.me/api/portraits/men/12.jpg);
+  background-size: cover;
+  background-position: center;  
+}
+#eve-3-cr-2 {
+  background: url(https://randomuser.me/api/portraits/men/69.jpg);
+  background-size: cover;
+  background-position: center;  
+}
+#eve-3-cr-3 {
+  background: url(https://randomuser.me/api/portraits/women/22.jpg);
+  background-size: cover;
+  background-position: center;  
+}
+/* Circles 4 */
+#eve-4-cr-1 {
+  background: url(https://randomuser.me/api/portraits/women/29.jpg);
+  background-size: cover;
+  background-position: center;  
+}
+#eve-4-cr-2 {
+  background: url(https://randomuser.me/api/portraits/women/69.jpg);
+  background-size: cover;
+  background-position: center;  
+}
+#eve-4-cr-3 {
+  background: url(https://randomuser.me/api/portraits/men/89.jpg);
+  background-size: cover;
+  background-position: center;  
+}
+/* Large Article */
+.article-large {
+  border-radius: 3px 3px 3px 3px;
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2);
+}
+.large {
+  height: 100%;
+  width: 100%;
+}
+.article-img {
+  background-size: cover;
+  background-position: center;
+
+  position: relative;
+  height: 80%;
+  width: 100%;
+  border-radius: 3px 3px 0 0;
+}
+.article-text {
+  padding: 0.8rem;
+  position: relative;
+  height: 20%;
+  width: 100%;
+  background-color: #5a5a5a;
+  border-radius: 0 0 3px 3px;
+}
+.title-text {
+  color: #fff;
+  align-items: center;
+}
+.title {
+  font-size: clamp(1.4rem, 2vw, 8rem);
+  margin-bottom: clamp(5px, 1vw, 10px);
+}
+.subtitle {
+  font-size: clamp(0.75rem, 1vw, 1rem);
+}
+/* Medium Article */
+.article-medium {
+  border-radius: 3px 3px 3px 3px;
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2);
+}
+.medium {
+  height: 100%;
+  width: 100%;
+}
+.article-filler {
+  position: relative;
+  height: 60%;
+  width: 100%;
+  border-radius: 3px 3px 0 0;
+}
+.article-blend{
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+  position: relative;
+  height: 20%;
+  width: 100%;
+}
+.article-shadow {
+  padding: 0.8rem;
+  position: relative;
+  height: 20%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0 0 3px 3px;
+}
+.medium-title {
+  font-size: clamp(0.6rem, 1.1vw, 1rem);
+}
+/* Small Article */
+.article-small {
+  border-radius: 3px 3px 3px 3px;
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2);
+}
+.small {
+  height: 100%;
+  width: 100%;
+}
+.small-title {
+  font-size: clamp(0.6rem, 1.1vw, 1rem);
+}
+
 
 
 /* Home Page Media Queries */
@@ -327,14 +486,11 @@ button:hover {
         'art-3-1 art-3-1'
         'art-3-2 art-3-2';
   }
-  #wordDefinition {
-    font-size: clamp(8px, 1vw, 14px);
+  .title {
+    font-size: clamp(1rem, 2vw, 1.4rem);
   }
-  input {
-    font-size: clamp(9px, 1vw, 14px);
-  }
-  button {
-    font-size: clamp(10px, 1vw, 14px);
+  .subtitle {
+    font-size: clamp(0.6rem, 1vw, 0.75rem);
   }
 
 }
