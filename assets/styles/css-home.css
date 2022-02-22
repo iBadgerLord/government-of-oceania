@@ -188,9 +188,9 @@ h1 {
   justify-content: center;
 }
 #wordDefinition {
-  font-size: clamp(11px, 1vw, 14px);
+  font-size: clamp(10px, 1vw, 14px);
   text-align: center;
-  padding: 0 20px 0;
+  padding: 0 10px 0px;
   color: #fff;
 }
 .guessing {
@@ -203,12 +203,13 @@ h1 {
   align-items: center;
 }
 input {
-  font-size: 14px;
+  font-size: clamp(10px, 1vw, 14px);
   width: 100%;
   height: auto;
   display: block;
   border: none;
-  padding: 10px 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
   border-bottom: solid 1px var(--first-color);
   transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, var(--first-color) 4%);
@@ -231,7 +232,7 @@ input::placeholder{
   color: #fff;
 }
 button {
-  font-size: 14px;
+  font-size: clamp(10px, 1vw, 14px);
   margin-top: 5%;
   height: auto;
   border: none;
