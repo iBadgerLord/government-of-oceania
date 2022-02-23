@@ -20,6 +20,7 @@
 #art-1-1 {
   grid-area: art-1-1;
   min-height: 600px;
+  cursor: pointer;
 }
 #art-img-1 {
   background: url(https://cdn.britannica.com/49/180249-138-22915E2F/Overview-Nurnberg-trials.jpg);
@@ -40,6 +41,7 @@
 #art-2-1 {
   grid-area: art-2-1;
   min-height: 200px;
+  cursor: pointer;
 }
 #art-img-3 {
   background: url(http://afflictor.com/wp-content/uploads/2016/11/sir-oswald-mosley.jpg);
@@ -321,7 +323,7 @@ button:hover {
 }
 .registerBtn {
   height: 40px;
-  width: 150px;
+  width: clamp(125px, 1vw, 150px);
 }
 /* Circles 1 */
 #eve-1-cr-1 {
