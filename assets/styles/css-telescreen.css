@@ -12,7 +12,7 @@
     'vid-1-5 vid-1-6'
     'vid-1-7 vid-1-8';
   grid-auto-columns: minmax(0, 1fr);
-  grid-auto-flow: column;    
+  grid-auto-flow: column;
 }
 
 /* Individual Videos */
@@ -20,7 +20,7 @@
   grid-area: vid-1-1;
   min-height: 400px;
 
-  background: url(https://coub-anubis-a.akamaized.net/coub_storage/coub/simple/cw_timeline_pic/a05f0e4494d/165b4adf7d0e08dd8da0f/1471648885_image.jpg);
+  background-image: url("ingsoc.png");
   background-size: cover;
   background-position: center;
 }
@@ -29,7 +29,7 @@
   grid-area: vid-1-2;
   min-height: 400px;
 
-  background-image: url("physical-jerks.PNG");
+  background-image: url("ingsoc.png");
   background-size: cover;
   background-position: center;
 }
@@ -65,7 +65,7 @@
   grid-area: vid-1-6;
   min-height: 400px;
 
-  background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/1984JLH2.jpg/440px-1984JLH2.jpg);
+  background-image: url("ingsoc.png");
   background-size: cover;
   background-position: center;
 }
@@ -127,7 +127,7 @@
 
 /* Watch Now Qualities */
 .watch-now {
-  color: #fff;
+  color: #b3b3b3;
   font-family: 'Roboto Slab', serif;
   display: flex;
   align-items: center;
@@ -155,18 +155,22 @@
 }
 .bx-play {
   font-size: 40px;
+  transition: .3s;
 }
 /* Text Adjust */
 .text {
   margin-left: 10px;
   font-size: 20px;
 }
+.order {
+  transition: .3s;
+}
 
 .description:hover .circle {
-  box-shadow: 0 0 8px 2px rgba(255, 255, 255, 0.25);
+  color: #F7F6FB;
 }
 .description:hover .order {
-  text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.8);
+  color: #F7F6FB;
 }
 
 
