@@ -1,59 +1,274 @@
-.over{
-    text-align: center;
-    padding: 0 1rem;
-    font-family: var(--body-font);
-    font-size: var(--normal-font-size);
-    color: white;
-    width: 100%;
-    height: 100%;
+/*=== News Section ===*/
+.news-main {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+        'art-title art-title art-title top-1'
+        'art-title art-title art-title top-2'
+
+        'art-img art-img art-img art-1'
+        'art-img art-img art-img art-2'
+
+        'art-text art-text art-text art-3'
+        'art-text art-text art-text art-4'
+        'art-text art-text art-text art-4'
+        'art-text art-text art-text art-5'
+        'art-text art-text art-text art-6';
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-rows: auto;
+    grid-auto-flow: column;    
 }
 
-  .under{
-    text-align: left;
-    margin: var(--header-height) 0 0 0;
-    padding: 0 10rem;
-    font-family: var(--body-font);
-    font-size: var(--normal-font-size);
-    color: white;
-    height: 100%;
+/* Individual Areas */
+#art-title {
+    grid-area: art-title;
+    min-height: 200px;
+}
+#art-img {
+    grid-area: art-img;
+    min-height: 600px;
+}
+#art-text {
+    grid-area: art-text;
+    min-height: 600px;
+    max-height: 100%;
 }
 
-.image {
-    text-align: center;
+#top-1 {
+    grid-area: top-1;
+    cursor: pointer;
 }
-  
-.articles {
+#top-2 {
+    grid-area: top-2;
+}
+
+#art-1 {
+    grid-area: art-1;
+    min-height: 200px;
+}
+#art-img-1 {
+    background: url(https://www.aeroclubsocal.org/wp-content/uploads/2018/08/iStock_000018904587.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#art-2 {
+    grid-area: art-2;
+    min-height: 200px;
+}
+#art-img-2 {
+    background: url(https://qph.fs.quoracdn.net/main-qimg-9f37f98e23813d1f85d5bcf90ff88c40-lq);
+    background-size: cover;
+    background-position: center;
+}  
+#art-3 {
+    background: url(https://i2-prod.northantslive.news//article4184920.ece/ALTERNATES/s1200b/1_Barratt-Shoe-Ltd-factory-Northampton.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-area: art-3;
+    min-height: 200px;
+}
+#art-4 {
+    grid-area: art-4;
+    min-height: 290px;
+}
+#art-img-4 {
+    background: url(https://img.haarets.co.il/img/1.10368741/900591791.jpg?precrop=1357,1360,x702,y114&width=1200&height=1200);
+    background-size: cover;
+    background-position: center;
+}
+
+#art-5 {
+    background: url(https://qph.fs.quoracdn.net/main-qimg-0418780b37cd2fdb83bda4fb9ef954ea);
+    background-size: cover;
+    background-position: center;
+    grid-area: art-5;
+    min-height: 200px;
+}
+#art-6 {
+    background: url(https://www.history.com/.image/t_share/MTU3ODc4NjAyNDUyNDQ0NDg5/image-placeholder-title.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-area: art-6;
+    min-height: 200px;
+}
+
+/* General Areas */
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+.top-story {
+    padding: 1rem;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2);  
+    background-color: #5a5a5a;
+    font-size: clamp(1rem, 2vw, 2rem);
     display: flex;
+    align-items: center;
     justify-content: center;
-}
-
-.potato{
-    font-size: 24px;
     text-align: center;
-    width: 300px;
-    height: 200px;
-    background-color: rgb(22, 20, 20);
-    float: left;
-    border: 5px solid black;
-    margin: 20px 10px 0 10px;
-    background-position: bottom;
 }
-  
-.center{
-  text-align: center;
-  font-size: 40px;
-  color: white;
+.top-p {
+    margin: 0;
+}
+.article {
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2); 
+    background-color: #5a5a5a; 
 }
 
-#potato1 {
-    background: url(https://cdn-cdaac.nitrocdn.com/tFOqLIaMYIaFjSGNUoYXbEDiJHtqbEtH/assets/static/optimized/rev-7fdb227/wp-content/uploads/2014/11/140828132531-01-world-war-ii-0828-horizontal-large-gallery.jpg);
+.text {
+    font-size: 4rem;
 }
-#potato2 {
-    background: url(https://upload.wikimedia.org/wikipedia/commons/b/bf/Ww2_158.jpg);
+
+.cover-img {
+    height: 100%;
+    width: 100%;  
 }
-#potato3 {
-    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/92nd-Divisionmassaitaly1944.jpg/1200px-92nd-Divisionmassaitaly1944.jpg);
+.img {
+    height: 95%;
+    background: url(https://cdn.britannica.com/49/180249-138-22915E2F/Overview-Nurnberg-trials.jpg);
+    background-size: cover;
+    background-position: center;  
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2);  
 }
-#potato4 {
-    background: url(https://i2-prod.stokesentinel.co.uk/incoming/article1145522.ece/ALTERNATES/s1200c/Oswald-Mosley.png);
+.caption {
+    height: 5%;
+    display: flex;
+    align-items: center;  
+    font-size: clamp(0.7rem, 1.5vw, 1rem);
+}
+
+.paragraph {
+    font-size: clamp(0.74em, 1vw, 1em);
+    text-align: justify;
+}
+h3 {
+    margin-top: 0;
+}
+
+
+
+.small {
+    height: 100%;
+    width: 100%;
+}
+.small-title {
+    font-size: clamp(0.6rem, 1.1vw, 1rem);
+}
+.article-img {
+    background-size: cover;
+    background-position: center;
+  
+    position: relative;
+    height: 80%;
+    width: 100%;
+    border-radius: 3px 3px 0 0;
+}
+.article-text {
+    padding: 0.8rem;
+    position: relative;
+    height: 20%;
+    width: 100%;
+    background-color: #5a5a5a;
+    border-radius: 0 0 3px 3px;
+}
+.article-medium {
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2);
+}
+.medium {
+    height: 100%;
+    width: 100%;
+}
+.article-filler {
+    position: relative;
+    height: 60%;
+    width: 100%;
+    border-radius: 3px 3px 0 0;
+}
+.article-blend{
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+    position: relative;
+    height: 20%;
+    width: 100%;
+}
+.article-shadow {
+    padding: 0.8rem;
+    position: relative;
+    height: 20%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 3px 3px;
+}
+.medium-title {
+    font-size: clamp(0.6rem, 1.1vw, 1rem);
+}
+
+
+
+/* News Page Media Queries */
+@media (max-width: 768px) {
+    .news-main {
+        grid-template-areas:
+            'art-title'
+            'art-title'
+    
+            'art-img'
+            'art-img'
+    
+            'art-text';
+        grid-auto-rows: none;
+    }
+    #top-1 {
+        display: none;
+    }
+    #top-2 {
+        display: none;
+    }
+    #art-1 {
+        display: none;
+    }
+    #art-2 {
+        display: none;
+    }
+    #art-3 {
+        display: none;
+    }
+    #art-4 {
+        display: none;
+    }
+    #art-5 {
+        display: none;
+    }
+    #art-6 {
+        display: none;
+    }
+    #art-text {
+        min-height: 700px;
+        height: min-content;
+    }
+    .paragraph {
+        font-size: clamp(0.68em, 1vw, 0.9em);
+    }  
+    #art-title {
+        min-height: auto;
+    }
+    .text {
+        font-size: clamp(2rem, 1vw, 4rem);
+    }
+}
+
+@media (max-width: 550px) {
+    .paragraph {
+        font-size: clamp(0.6em, 1vw, 0.7em);
+    } 
+}
+@media (max-width: 550px) {
+    .paragraph {
+        font-size: clamp(0.5em, 1vw, 0.6em);
+    } 
 }
