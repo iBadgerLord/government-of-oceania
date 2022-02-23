@@ -6,7 +6,6 @@
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0% auto; /* Gives that scrolling effect as the typing happens */
     top: -250px;
-    font-family: Copperplate;
     font-size:  180%;
     color: white;
     letter-spacing: .15em; /* Adjust as needed */
@@ -29,15 +28,14 @@
         
   .square {
     position: absolute; 
-    width: 450px;
+    width: 30vw;
     height: 600px;
     background: black;
     text-align: center;
-    right: -170px;
+    right: -10px;
     transform: translateX(-50%);
     top: 350px;
     font-size: 250%;
-    font-family: Copperplate; 
   }
   
         
@@ -54,7 +52,6 @@
   }
   
   :root {
-    font-family: Copperplate;
     padding: 0;
     margin: 0;
     display: flex;
@@ -66,11 +63,11 @@
   
   .boxes {
     display: flex;
-    width: 35vw;
+    width: 30vw;
     position: absolute;
-    right: 3.5%;
+    right: -10px;
     transform: translateX(-5%);
-    top: 23%;
+    top: -20px;
     transform: translateY(-20%)
   
   }
@@ -104,7 +101,6 @@
     grid-template-rows: auto;
     padding: 1rem; 
     color: yellowgreen;
-    font-family: Copperplate;
     
     {
       margin: 0;
@@ -126,11 +122,11 @@
   }
   .carousel {
     overflow: hidden;
-    width: 800px;
+    width: 750px;
     height: 560px;
     position: absolute;
-    top: 430px;
-    left: 150px;
+    top: 480px;
+    left: 100px;
   
   }
   
@@ -191,13 +187,12 @@
    
   .panel {
     width: 750px;
-    height: 400px;
+    height: 470px;
     background: grey;
-    font-family: Copperplate;
     box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
     border-radius: 6px;
     overflow: hidden;
-    left: 150px;
+    left: 100px;
     top: -20px;
     position: absolute;
   
@@ -219,7 +214,6 @@
   .calendar-views span {
     font-size: 14px;
     font-weight: 300;
-    font-family: Copperplate;
     color: #BDC6CF;
     padding: 6px 14px;
     border: 2px solid transparent;
@@ -243,7 +237,6 @@
   }
   .category span:first-child {
     font-weight: 300;
-    font-family: Copperplate;
     font-size: 14px;
     opacity: 0.6;
     color: #fff;
@@ -251,7 +244,6 @@
   }
   .category span:last-child {
     font-size: 32px;
-    font-family: Copperplate;
     font-weight: 300;
     color: #fff;
   }
@@ -297,7 +289,6 @@
   div[class*="-stats"] {
     position: absolute;
     color: #fff;
-    font-family: Copperplate;
     font-size: 12px;
     display: flex;
     opacity: 0;
@@ -381,7 +372,6 @@
   }
   .welcomebox {
     position: relative;
-    font-family: Copperplate;
     text-align: center;
     left: 50%;
     transform: translateX(-50%);
@@ -441,7 +431,6 @@
         position: absolute;
         left: -480px;
         top: 330px;
-        font-family: Copperplate;
   
 }
   
@@ -483,4 +472,55 @@
       position: absolute;
       right: -570px;
       top: 1350px;
+}
+.f {
+  position: absolute;
+  width: 10px;
+  height: 60px;
+  top: 350px;
+  right: 470px;
+  font-size: 70px;
+  background: transparent;
+  color: white;
+  
+}
+.f:hover {
+  color: black;
+}
+button {
+  background: transparent;
+  border: none !important;
+  scroll-behavior: smooth;
+  animation: 1s;
+  }
+
+a:hover {
+    color: #000000;
+  }
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+a:active {
+  color: white;
+}
+
+.Gabrielreport {
+  position: absolute;
+  top: 900px;
+
+}
+.archivesText {
+  position: absolute;
+  top: 1000px;
+  right: 0px;
+  background: black;
+}
+.archive {
+  font-size: 30px;
+  font-family: Oswald;
 }
