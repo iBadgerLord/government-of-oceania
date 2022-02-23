@@ -36,6 +36,27 @@ function colorLink(){
 }
 linkColor.forEach(l=> l.addEventListener('click', colorLink))
 
+/* ===== Open File Function ===== */ 
+function openFile(file) {
+  window.open(file);
+}
+
+/*===== Top of Page Event =====*/
+/*
+window.addEventListener("scroll", function(){
+  if(window.scrollY==0){
+    //user is at the top of the page; no need to show the back to top button
+    document.getElementById("header").style.height = "12rem";
+    document.getElementById("body-pd").style.margin = "12rem 0 0 0";
+
+  } else if (window.scrollY!=0) {
+    document.getElementById("header").style.height = "4rem";
+    document.getElementById("body-pd").style.margin = "4rem 0 0 0";
+  }
+});
+*/
+
+/*===== Carousel =====*/
 let slidePosition = 0;
 const slides = document.getElementsByClassName('carousel__item');
 const totalSlides = slides.length;
